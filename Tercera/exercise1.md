@@ -31,24 +31,41 @@ Consultas
    
 2. Listado de vehículos que trabajan en el Actopan, incluye los datos de placa, pasajero, modelo y anio.
    #### Solución
-   TODO script SQL
+   ```sql
+   SELECT placa, pasajero, modelo, anio
+   FROM automovil
+   WHERE municipio = 'Actopan';
+   ```
    #### Salida
-   TODO listado de atributos y tuplas
+   ![2](bloque1_imagenes/2.png)
    
 3. Listado de vehículos cuyo año de inicio de operación sea menor o igual a 2023, incluye los datos de marca, modelo y kilometraje.
    #### Solución
-   TODO script SQL
+   ```sql
+   SELECT marca, modelo, kilometraje
+   FROM automovil
+   WHERE anio <= 2023;
+   ```
    #### Salida
-   TODO listado de atributos y tuplas
+   ![3](bloque1_imagenes/3.png)
    
 4. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
    #### Solución
-   TODO script SQL
+   ```sql
+   SELECT modelo, anio, kilometraje
+   FROM automovil
+   WHERE kilometraje > 5000
+   AND kilometraje < 65000;
+   ```
    #### Salida
-   TODO listado de atributos y tuplas
+   ![4](bloque1_imagenes/4.png)
 
 5. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
    #### Solución
-   TODO script SQL
+   ```sql
+   SELECT marca, municipio, placa
+   FROM automovil
+   WHERE SUBSTRING(placa, 6, 1) in ('1','2','3','4');
+   ```
    #### Salida
-   TODO listado de atributos y tuplas
+   ![5](bloque1_imagenes/5.png)
