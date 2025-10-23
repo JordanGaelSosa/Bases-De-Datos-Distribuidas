@@ -21,35 +21,33 @@ Consultas
 ---------------
 1. Listado de todos los vehículos que tiene capacidad de trasladar a más de 4 pasajeros, incluye los datos de marca, municipio y placa.
    #### Solución
-   TODO script SQL
 ```sql
-   SELECT *
-     FROM mi_tablas
-    WHERE condicion_1
-      AND condicion_2
+   SELECT marca, municipio, placa
+   FROM automovil
+   WHERE pasajero > 4;
 ```
    #### Salida
-   TODO listado de atributos y tuplas
+   ![1](bloque1_imagenes/1.png)
    
-3. Listado de vehículos que trabajan en el Actopan, incluye los datos de placa, pasajero, modelo y anio.
+2. Listado de vehículos que trabajan en el Actopan, incluye los datos de placa, pasajero, modelo y anio.
    #### Solución
    TODO script SQL
    #### Salida
    TODO listado de atributos y tuplas
    
-4. Listado de vehículos cuyo año de inicio de operación sea menor o igual a 2023, incluye los datos de marca, modelo y kilometraje.
+3. Listado de vehículos cuyo año de inicio de operación sea menor o igual a 2023, incluye los datos de marca, modelo y kilometraje.
    #### Solución
    TODO script SQL
    #### Salida
    TODO listado de atributos y tuplas
    
-5. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
+4. Listado de vehículos que el kilometraje sea mayor a 5000 y menor a 65000, incluye los datos de modelo, anio y kilometraje.
    #### Solución
    TODO script SQL
    #### Salida
    TODO listado de atributos y tuplas
 
-6. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
+5. Listado de vehículos que corresponde verificación en septiembre-octubre, incluye los datos de marca, municipio y placa.
    #### Solución
    TODO script SQL
    #### Salida
